@@ -1,6 +1,6 @@
 #include <stdio.h>
 using namespace std; 
-main() {
+main() {       // Начало программы
    float x,y;
    char sign='+';
    while (sign != '0') {
@@ -12,17 +12,17 @@ main() {
          scanf("%f%*c", &x);
          printf("y=");
          scanf("%f%*c", &y);
-         switch (sign) {
-            case '+':
+         switch (sign) {      
+            case '+':                  // кейс для операции сложения
                printf("%.2f\n", x+y);
                break;
-            case '-':
+            case '-':                  // кейс для операции вычитания
                printf("%.2f\n", x-y);
                break;
-            case '*':
+            case '*':                  // кейс для операции *
                printf("%.2f\n", x*y);
                break;
-            case '/':
+            case '/':                  // кейс для операции /
                if (y != 0) printf("%.2f\n", x/y);
                else printf("Delenie na 0!\n");
          }
